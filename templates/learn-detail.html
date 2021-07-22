@@ -1,0 +1,52 @@
+{% extends 'base_fixed.html' %}
+{% load static %}
+
+
+{% block contents %}
+<section class="parallax-section fw-parallax" data-scrollax-parent="true">
+    <div class="bg par-elem"  data-bg="{{ course.cover.url }}" data-scrollax="properties: { translateY: '30%' }"></div>
+    <div class="overlay"></div>
+    <div class="pattern-bg"></div>
+    <div class="container">
+        <div class="section-title">
+            <h2>{{ course.course }}</h2>
+            <p> {{ course.description }}</p>
+            <div class="horizonral-subtitle"><span># LEARN</span></div>
+        </div>
+    </div>
+    <div class="hero-start-button-wrap">
+        <div class="container">
+            <a href="#sec1" class="custom-scroll-link hero-start-button"><span>Let's Start</span> <i class="fal fa-long-arrow-down"></i></a>
+        </div>
+    </div>
+</section>
+
+<section class="dark-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hidden-info fl-wrap">
+                    <div class="hidden-works-list fl-wrap">
+                        {% for topic in course.topic.all %}
+                        <div class="hidden-works-item fl-wrap">
+                            <div class="hidden-works-item-text">
+                                <h3><a href="{{topic.get_absolute_url }}">{{ topic.topic }}</a></h3>
+                                <p>{{ topic.description }}</p>
+                            </div>
+                        </div>
+                        {% endfor %} 
+                    </div>
+                    <!-- <div class="hidden-info-pagination m-30"><a href="#"><span>Next Page</span><i class="fal fa-arrow-right"></i></a></div> -->
+    
+                </div>
+            </div>
+            <div class="col-md-4 no-padding">
+            </div>
+        </div>
+    </div>
+    <!-- hidden-info-wrap end -->
+    <div class="fl-wrap limit-box"></div>
+</section>
+
+{% endblock contents %}
+    

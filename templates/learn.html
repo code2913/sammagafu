@@ -1,0 +1,86 @@
+{% extends 'base_fixed.html' %}
+{% load static %}
+{% block contents %}
+<section data-scrollax-parent="true" id="sec1">
+    <div class="section-subtitle" data-scrollax="properties: { translateY: '150px' }" style="transform: translateZ(0px) translateY(-19.2598px); font-size: 210px;"><span>#</span>Learn</div>
+    <div class="container">
+        <!-- filter -->
+        <div class="filter-holder inline-filter fl-wrap  mar-bottom">
+            <div class="filter-button"><i class="fal fa-filter"></i> <span>Filter : </span></div>
+            <div class="gallery-filters">
+                <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All</a>
+                
+                {% for category in category %}
+                <a href="#" class="gallery-filter" data-filter=".{{ category.slug }}">{{ category.category }}</a>
+                {% endfor %}
+            </div>
+            <div class="folio-counter">
+                <div class="num-album">8</div>
+                <div class="all-album">8</div>
+            </div>
+        </div>
+        <!-- filter end-->
+        <!-- portfolio start -->
+        {% for course in course %}
+        <div class="gallery-items spad  hde three-column">
+            <!-- gallery-item-->
+            <div class="gallery-item {% for category in course.category.all %} {{ category.slug }} {% endfor %}" style="position: absolute; left: 0px; top: 0px;">
+                <div class="grid-item-holder">
+                    <img src="{{ course.cover.url }}" alt="">
+                    <div class="box-item hd-box" style="display: block; left: 0px; top: -100%; transition: all 300ms ease 0s;">
+                        <div class=" fl-wrap full-height">
+                            <div class="hd-box-wrap">
+                                <h2><a href="{{course.get_absolute_url }}">{{ course.course }}</a></h2>
+                                <p>{% for category in course.category.all %} {{ category.category }} {% endfor %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- portfolio end -->
+    </div>
+</section>
+{% endblock contents %}
+
+
+<section class="dark-bg">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="hidden-info fl-wrap">
+                <div class="hidden-works-list fl-wrap">
+                    
+                    {% for course in course %}
+                    <div class="hidden-works-item fl-wrap" data-bgscr="{{ course.cover.url }}">
+                        <div class="hidden-works-item-media">
+                            <div class="hidden-works-item-media-img fl-wrap">
+                                <img src="{{ course.cover.url }}" alt="">
+                                <a href="{{course.get_absolute_url }}"><i class="fal fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="hidden-works-item-text">
+                            <h3><a href="{{course.get_absolute_url }}">{{ course.course }}</a></h3>
+                            <ul>
+                                
+                                {% for category in course.category.all %}
+                                <li><a href="{{ category.slug }}">{{ category.category }}</a></li>
+                                {% endfor %}
+                                    
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+                        
+                </div>
+                <div class="hidden-info-pagination m-30"><a href="#"><span>Next Page</span><i class="fal fa-arrow-right"></i></a></div>
+
+            </div>
+        </div>
+        <div class="col-md-4 no-padding">
+        </div>
+    </div>
+
+    <!-- hidden-info-wrap end -->
+    <div class="fl-wrap limit-box"></div>
+</section>

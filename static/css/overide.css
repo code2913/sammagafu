@@ -1,0 +1,8 @@
+.m-30{
+    margin: 30px 0;
+}
+.recent-tutorials{
+    height: 400px;
+}
+
+iframe,embed { width: 100%!important; height: 400px!important; }

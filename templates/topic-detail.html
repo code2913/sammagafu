@@ -1,0 +1,39 @@
+{% extends 'base_fixed.html' %}
+{% load static %}
+
+{% block contents %}
+<div id="wrapper" class="single-page-wrap">
+    <!-- Content-->
+    <div class="content">
+
+        <section data-scrollax-parent="true" id="sec1">
+            <!-- <div class="section-subtitle right-pos" data-scrollax="properties: { translateY: '-250px' }" style="transform: translateZ(0px) translateY(92.1677px); font-size: 172.353px;"><span>//</span>Project Title</div> -->
+            <div class="container">
+                <div class="fl-wrap">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="fixed-column l-wrap" style="z-index: auto; position: static; top: auto;">
+                                <div class="pr-title fl-wrap">
+                                    <h3>{{ topic.topic }}</h3>
+                                    <span>{{ topic.description}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="details-wrap fl-wrap">
+                             {{ topic.video|safe }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="limit-box fl-wrap"></div>
+                </div>
+                <!-- det box end-->
+            </div>
+        </section>
+ 
+    </div>
+    <!-- Content end -->
+    <!-- footer-->
+    <div class="height-emulator fl-wrap" style="height: 664px;"></div>
+</div>
+{% endblock contents %}

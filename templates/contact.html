@@ -1,0 +1,121 @@
+{% extends 'base_fixed.html' %}
+{% load static %}
+{% block contents %}
+<section class="parallax-section dark-bg sec-half parallax-sec-half-right" data-scrollax-parent="true">
+    <div class="bg par-elem"  data-bg="{% static 'images/bg/28.jpg' %}" data-scrollax="properties: { translateY: '30%' }"></div>
+    <div class="overlay"></div>
+    <div class="pattern-bg"></div>
+    <div class="container">
+        <div class="section-title">
+            <h2>My <span>Contact </span>   Page</h2>
+            <p> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+            <div class="horizonral-subtitle"><span>Contacts</span></div>
+        </div>
+    </div>
+    <a href="#sec1" class="custom-scroll-link hero-start-link"><span>Let's Start</span> <i class="fal fa-long-arrow-down"></i></a>
+</section>
+<section data-scrollax-parent="true" id="sec1">
+    <div class="section-subtitle"  data-scrollax="properties: { translateY: '-250px' }" >Get in Touch<span>//</span></div>
+    <div class="container">
+        <!-- contact details --> 
+        <div class="fl-wrap mar-bottom">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="pr-title fl-wrap">
+                        <h3>Contact  Details</h3>
+                        <span>Lorem Ipsum generators on the Internet   king this the first true generator</span>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- features-box-container --> 
+                    <div class="features-box-container single-serv fl-wrap">
+                        <div class="row">
+                            <!--features-box --> 
+                            <div class="features-box col-md-4">
+                                <div class="time-line-icon">
+                                    <i class="fal fa-mobile-android"></i>
+                                </div>
+                                <h3>01. Phone</h3>
+                                <a href="tel:+255788419991">+255 788 419 991</a>
+                            </div>
+                            <!-- features-box end  --> 
+                            <!--features-box --> 
+                            <div class="features-box col-md-4">
+                                <div class="time-line-icon">
+                                    <i class="fal fa-compass"></i>
+                                </div>
+                                <h3>02. Location</h3>
+                                <a href="#">USA 27TH Brooklyn NY</a>
+                            </div>
+                            <!-- features-box end  --> 
+                            <!--features-box --> 
+                            <div class="features-box col-md-4">
+                                <div class="time-line-icon">
+                                    <i class="fal fa-envelope-open"></i>
+                                </div>
+                                <h3>03. Email</h3>
+                                <a href="mailto:hi@sammagafu.com">hi@sammagafu.com</a>
+                            </div>
+                            <!-- features-box end  --> 
+                        </div>
+                    </div>
+                    <!-- features-box-container end  -->
+                </div>
+            </div>
+        </div>
+        <!-- contact details end  --> 
+
+        <div class="fl-wrap mar-top">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="pr-title fl-wrap">
+                        <h3>Get In Touch</h3>
+                        <span>Lorem Ipsum generators on the Internet   king this the first true generator</span>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div id="contact-form">
+                        <div id="message"></div>
+                        <form  class="custom-form" action="php/contact.php" name="contactform" id="contactform">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label><i class="fal fa-user"></i></label>
+                                        <input type="text" name="name" id="name" placeholder="Your Name *" value=""/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label><i class="fal fa-envelope"></i> </label>
+                                        <input type="text"  name="email" id="email" placeholder="Email Address *" value=""/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label><i class="fal fa-mobile-android"></i> </label>
+                                        <input type="text"  name="phone" id="phone" placeholder="Phone *" value=""/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select name="subject" id="subject" data-placeholder="Subject" class="chosen-select sel-dec">
+                                            <option>Subject</option>
+                                            <option value="project">Order Project</option>
+                                            <option value="Support">Support</option>
+                                            <option value="learn">Learn</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:"></textarea>
+                                <div class="clearfix"></div>
+                                <button class="btn float-btn flat-btn color-btn" id="submit">Send Message</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- contact form  end--> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-parallax-module" data-position-top="70"  data-position-left="20" data-scrollax="properties: { translateY: '-250px' }"></div>
+    <div class="bg-parallax-module" data-position-top="40"  data-position-left="70" data-scrollax="properties: { translateY: '150px' }"></div>
+    <div class="bg-parallax-module" data-position-top="80"  data-position-left="80" data-scrollax="properties: { translateY: '350px' }"></div>
+    <div class="bg-parallax-module" data-position-top="95"  data-position-left="40" data-scrollax="properties: { translateY: '-550px' }"></div>
+    <div class="sec-lines"></div>
+</section>
+{% endblock contents %}
+    
