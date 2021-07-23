@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'cv',
     'learn',
     'projects',
+    'django_quill',
 ]
 
 MIDDLEWARE = [

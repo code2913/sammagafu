@@ -1,0 +1,65 @@
+{% extends 'base_fixed.html' %}
+{% load static %}
+
+{% block contents %}
+
+    <section data-scrollax-parent="true" id="sec1">
+        <div class="container">
+            <!-- filter -->
+            <div class="filter-holder inline-filter fl-wrap  mar-bottom">
+                <div class="filter-button"><i class="fal fa-filter"></i> <span>Filter : </span></div>
+                <div class="gallery-filters">
+                    <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All</a>
+                    {% for filters in category %}
+                    <a href="#" class="gallery-filter" data-filter=".{{filters.slug}}">{{filters.category}}</a>
+                    {% endfor %}
+                </div>
+                <div class="folio-counter">
+                    <div class="num-album"></div>
+                    <div class="all-album"></div>
+                </div>
+            </div>
+            <!-- filter end-->
+            <!-- portfolio start -->
+            <div class="gallery-items spad  vis-box-det white-det three-column">
+                <!-- gallery-item-->
+                
+                {% for project in project %}
+                <div class="gallery-item {% for category in project.category.all %}{{ category.slug }}{% endfor %}">
+                    <div class="grid-item-holder">
+                        <img  src="{{ project.cover.url }}"    alt="">
+                        <div class="box-item hd-box">
+                            <div class=" fl-wrap full-height">
+                                <div class="hd-box-wrap">
+                                    <h2><a href="{{ project.get_absolute_url }}">{{ project.project }}</a></h2>
+                                    <p class="text-primary">{% for category in project.category.all %}
+                                        {{ category.category }}
+                                    {% endfor %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                    
+            </div>
+            <!-- portfolio end -->
+        </div>
+
+    </section>
+    <!-- section-->
+    <section class="dark-bg2 small-padding order-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Ready To order Your Project ?</h3>
+                </div>
+                <div class="col-md-4"><a href="contscts.html" class="btn flat-btn color-btn">Get In Touch</a> </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end-->
+</div>
+<!--   content end -->
+{% endblock contents %}
+    

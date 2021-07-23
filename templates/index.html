@@ -1,13 +1,6 @@
-{% extends 'base_fixed.html' %}
+{% extends 'base.html' %}
 {% load static %}
-{% block contents %}
-
-
-{% endblock contents %}
-
-
-<!-- scroll-nav-wrap end-->
-<!-- hero-wrap-->
+{% block content %}
 <div class="hero-wrap" id="sec1" data-scrollax-parent="true">
     <!-- hero-inner-->
     <div class="hero-inner fl-wrap full-height">
@@ -15,53 +8,21 @@
         <div class="fs-carousel-wrap fl-wrap full-height slider-carousel-wrap">
             <div class="fs-carousel fl-wrap full-height cur_carousel-slider-container">
                 <!-- fs-carousel-item-->
+                {{name}}
+                {% for project in project  %}
                 <div class="fs-carousel-item">
                     <div class="fs-carousel-title fl-wrap">
                         <div class="fs-carousel-titlecat"><a href="#">Web Design</a> <a href="#">Photography</a></div>
-                        <h3><a href="portfolio-single.html">Lokomotive Design Project</a></h3>
-                        <a href="portfolio-single.html" class="fs-carousel-link">View Project</a>
+                        <h3><a href="{{ project.get_absolute_url }}">{{ project.project }}</a></h3>
+                        <a href="{{ project.get_absolute_url }}" class="fs-carousel-link">View Project</a>
                     </div>
                     <div class="carousle-item-number"><span>01.</span></div>
-                    <div class="bg" data-bg="{% static 'images/bg/29.jpg' %}"></div>
+                    <div class="bg" data-bg="{{ project.cover.url }}"></div>
                     <div class="overlay"></div>
                 </div>
-                <!-- fs-carousel-item end-->
-                <!-- fs-carousel-item-->
-                <div class="fs-carousel-item">
-                    <div class="fs-carousel-title fl-wrap">
-                        <div class="fs-carousel-titlecat"><a href="#">Development </a> <a href="#">Ui/Ux</a></div>
-                        <h3><a href="portfolio-single.html">Man in Old Town</a></h3>
-                        <a href="portfolio-single.html" class="fs-carousel-link">View Project</a>
-                    </div>
-                    <div class="carousle-item-number"><span>02.</span></div>
-                    <div class="bg" data-bg="{% static 'images/bg/29.jpg' %}"></div>
-                    <div class="overlay"></div>
-                </div>
-                <!-- fs-carousel-item end-->
-                <!-- fs-carousel-item-->
-                <div class="fs-carousel-item">
-                    <div class="fs-carousel-title fl-wrap">
-                        <div class="fs-carousel-titlecat"><a href="#">Development </a> <a href="#"> Web Design</a></div>
-                        <h3><a href="portfolio-single.html">Corporate website</a></h3>
-                        <a href="portfolio-single.html" class="fs-carousel-link">View Project</a>
-                    </div>
-                    <div class="carousle-item-number"><span>03.</span></div>
-                    <div class="bg" data-bg="{% static 'images/bg/29.jpg' %}"></div>
-                    <div class="overlay"></div>
-                </div>
-                <!-- fs-carousel-item end-->
-                <!-- fs-carousel-item-->
-                <div class="fs-carousel-item">
-                    <div class="fs-carousel-title fl-wrap">
-                        <div class="fs-carousel-titlecat"><a href="#">Development </a> <a href="#"> Web Design</a></div>
-                        <h3><a href="portfolio-single.html">Personal portfolio</a></h3>
-                        <a href="portfolio-single.html" class="fs-carousel-link">View Project</a>
-                    </div>
-                    <div class="carousle-item-number"><span>04.</span></div>
-                    <div class="bg" data-bg="{% static 'images/bg/29.jpg' %}"></div>
-                    <div class="overlay"></div>
-                </div>
-                <!-- fs-carousel-item end-->
+                {% endfor %}
+                    
+                
             </div>
             <!--  fs-carousel end -->
             <!--  slider nav -->
@@ -73,87 +34,9 @@
         <!-- fs-carousel-wrap-->
     </div>
 </div>
-<!-- hero-wrap end-->
-<!-- Content-->
 <div class="content">
     <!-- section-->
-    <section data-scrollax-parent="true" id="sec2">
-        <div class="section-subtitle" data-scrollax="properties: { translateY: '-250px' }"> <span>#</span>ABOUT </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="collage-image fl-wrap">
-                        <div class="collage-image-title" data-scrollax="properties: { translateY: '150px' }">Samuel
-                            Magafu.</div>
-                        <img src="{% static 'images/all/1.jpg' %}" class="respimg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="main-about fl-wrap">
-                        <h5>Curabitur convallis fringilla diam</h5>
-                        <h2>Innovative solutions<br>to boost <span> your creative </span> projects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla
-                            finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus
-                            suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla
-                            diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a
-                            consequat purus viverra.</p>
-                        <!-- features-box-container -->
-                        <div class="features-box-container fl-wrap">
-                            <div class="row">
-                                <!--features-box -->
-                                <div class="features-box col-md-6">
-                                    <div class="time-line-icon">
-                                        <i class="fal fa-desktop"></i>
-                                    </div>
-                                    <h3>Web Design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar
-                                        neque. </p>
-                                </div>
-                                <!-- features-box end  -->
-                                <!--features-box -->
-                                <div class="features-box col-md-6">
-                                    <div class="time-line-icon">
-                                        <i class="fal fa-mobile-android"></i>
-                                    </div>
-                                    <h3>Ui/Ux Design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar
-                                        neque. </p>
-                                </div>
-                                <!-- features-box end  -->
-                                <!--features-box -->
-                                <div class="features-box col-md-6">
-                                    <div class="time-line-icon">
-                                        <i class="fab fa-pagelines"></i>
-                                    </div>
-                                    <h3>Branding</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar
-                                        neque. </p>
-                                </div>
-                                <!-- features-box end  -->
-                                <!--features-box -->
-                                <div class="features-box col-md-6">
-                                    <div class="time-line-icon">
-                                        <i class="fal fa-shopping-bag"></i>
-                                    </div>
-                                    <h3>Ecommerce</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar
-                                        neque. </p>
-                                </div>
-                                <!-- features-box end  -->
-                            </div>
-                        </div>
-                        <!-- features-box-container end  -->
-                        <a href="portfolio.html" class="btn float-btn flat-btn color-btn">My Portfolio</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-parallax-module" data-position-top="90" data-position-left="25"
-            data-scrollax="properties: { translateY: '-250px' }"></div>
-        <div class="bg-parallax-module" data-position-top="70" data-position-left="70"
-            data-scrollax="properties: { translateY: '150px' }"></div>
-        <div class="sec-lines"></div>
-    </section>
+
     <!-- section end-->
     <!-- section-->
     <section class="parallax-section dark-bg sec-half parallax-sec-half-right" data-scrollax-parent="true">
@@ -300,7 +183,6 @@
             </div>
             <!-- client-list end-->
         </div>
-        <div class="sec-lines"></div>
     </section>
 
     
@@ -320,4 +202,7 @@
     </section>
     <!-- section end-->
 </div>
+{% endblock content %}
+
+
 <!-- Content end -->
