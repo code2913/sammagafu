@@ -21,7 +21,32 @@
  
 /*-------------Fonts---------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:400,500,600,700,800,900|Titillium+Web:400,600,700&subset=cyrillic,cyrillic-ext,devanagari,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro.eot');
+    src: url('../fonts/SofiaPro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SofiaPro.woff2') format('woff2'),
+    url('../fonts/SofiaPro.woff') format('woff'),
+    url('../fonts/SofiaPro.ttf') format('truetype'),
+    url('../fonts/SofiaPro.svg#SofiaPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro-Medium.eot');
+    src: url('../fonts/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SofiaPro-Medium.woff2') format('woff2'),
+    url('../fonts/SofiaPro-Medium.woff') format('woff'),
+    url('../fonts/SofiaPro-Medium.ttf') format('truetype'),
+    url('../fonts/SofiaPro-Medium.svg#SofiaPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
 
 /*-------------General Style---------------------------------------*/
 
@@ -75,7 +100,7 @@ body {
 	font-weight: 400;
 	margin-top: -20px;
 	color: rgba(255, 255, 255, 0.31);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-align: left;
 }
 .pin:after {
@@ -115,7 +140,7 @@ p {
 	padding-bottom: 10px;
 	font-weight: 500;
 	color: #878C9F;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 blockquote {
 	float: left;
@@ -437,7 +462,73 @@ blockquote p {
 	left: calc(100% + 100px);
 }
 .header-logo img {
-	height: 18px;
+	height: 41@font-face {
+		font-family: 'Sofia Pro';
+		src: url('../fonts/SofiaPro.eot');
+		src: url('../fonts/SofiaPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaPro.woff2') format('woff2'),
+		url('../fonts/SofiaPro.woff') format('woff'),
+		url('../fonts/SofiaPro.ttf') format('truetype'),
+		url('../fonts/SofiaPro.svg#SofiaPro') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {
+		font-family: 'Sofia Pro';
+		src: url('../fonts/SofiaPro-Medium.eot');
+		src: url('../fonts/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaPro-Medium.woff2') format('woff2'),
+		url('../fonts/SofiaPro-Medium.woff') format('woff'),
+		url('../fonts/SofiaPro-Medium.ttf') format('truetype'),
+		url('../fonts/SofiaPro-Medium.svg#SofiaPro-Medium') format('svg');
+		font-weight: 500;
+		font-style: normal;
+	}@font-face {
+		font-family: 'Sofia Pro';
+		src: url('../fonts/SofiaPro.eot');
+		src: url('../fonts/SofiaPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaPro.woff2') format('woff2'),
+		url('../fonts/SofiaPro.woff') format('woff'),
+		url('../fonts/SofiaPro.ttf') format('truetype'),
+		url('../fonts/SofiaPro.svg#SofiaPro') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {
+		font-family: 'Sofia Pro';
+		src: url('../fonts/SofiaPro-Medium.eot');
+		src: url('../fonts/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaPro-Medium.woff2') format('woff2'),
+		url('../fonts/SofiaPro-Medium.woff') format('woff'),
+		url('../fonts/SofiaPro-Medium.ttf') format('truetype'),
+		url('../fonts/SofiaPro-Medium.svg#SofiaPro-Medium') format('svg');
+		font-weight: 500;
+		font-style: normal;
+	}@font-face {
+		font-family: 'Sofia Pro';
+		src: url('../fonts/SofiaPro.eot');
+		src: url('../fonts/SofiaPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaPro.woff2') format('woff2'),
+		url('../fonts/SofiaPro.woff') format('woff'),
+		url('../fonts/SofiaPro.ttf') format('truetype'),
+		url('../fonts/SofiaPro.svg#SofiaPro') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {
+		font-family: 'Sofia Pro';
+		src: url('../fonts/SofiaPro-Medium.eot');
+		src: url('../fonts/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaPro-Medium.woff2') format('woff2'),
+		url('../fonts/SofiaPro-Medium.woff') format('woff'),
+		url('../fonts/SofiaPro-Medium.ttf') format('truetype'),
+		url('../fonts/SofiaPro-Medium.svg#SofiaPro-Medium') format('svg');
+		font-weight: 500;
+		font-style: normal;
+	}px;
 	width: auto;
 }
 .nav-holder {
@@ -746,7 +837,7 @@ nav.nav-inner {
 	color: rgba(255, 255, 255, 0.71);
 	float: left;
 	padding-top: 36px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 10px;
@@ -1237,7 +1328,7 @@ p.interact,
 	left: 20px;
 	z-index: 3;
 	font-weight: bold;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .half-bg {
 	float: right;
@@ -1333,7 +1424,7 @@ p.interact,
 }
 .half-hero-wrap h1 {
 	color: #fff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 50px;
 	text-align: left;
 	font-weight: 600;
@@ -1867,7 +1958,7 @@ section.parallax-section.parallax-sec-half-left .horizonral-subtitle span {
 }
 .section-title h2 {
 	font-size: 40px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-weight: 800;
 	color: rgb(50, 58, 69);
@@ -1942,7 +2033,7 @@ section.parallax-section .section-title:before {
 }
 .section-subtitle {
 	position: absolute;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-weight: 900;
 	top: 50px;
@@ -1980,7 +2071,7 @@ section.parallax-section .section-title:before {
 	font-size: 24px;
 	text-align: left;
 	font-weight: 700;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	position: relative;
 }
 .pr-title span {
@@ -1993,7 +2084,7 @@ section.parallax-section .section-title:before {
     padding-bottom: 10px;
     font-weight: 500;
     color: #878C9F;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	text-align:left;
 }
 .sec-lines {
@@ -2102,7 +2193,7 @@ section.parallax-section .section-title:before {
 	font-weight: 700;
 	font-size: 34px;
 	color: #292929;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	padding-bottom: 30px;
 	position: relative;
 }
@@ -2166,7 +2257,7 @@ section.parallax-section .section-title:before {
 	color: #666;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 11px;
 	font-weight: 600;
 }
@@ -2201,7 +2292,7 @@ section.parallax-section .section-title:before {
 	color: #666;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 10px;
 	font-weight: 500;
 }
@@ -2330,7 +2421,7 @@ section.parallax-section .section-title:before {
 	font-size: 12px;
 	line-height: 152px;
 	z-index: 2;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	color: #666;
 }
@@ -2350,7 +2441,7 @@ section.parallax-section .section-title:before {
 	font-size: 12px;
 	margin-top: 13px;
 	padding-bottom: 6px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	color: #666;
 	margin-right: 5%;
@@ -2561,7 +2652,7 @@ section.parallax-section .section-title:before {
 	padding-top: 3px;
 	border-left: 1px solid rgba(255, 255, 255, 0.11);
 	padding-left: 30px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .fsp-filter .folio-counter div {
 	float: left;
@@ -2641,7 +2732,7 @@ section.parallax-section .section-title:before {
 	font-size: 11px;
 	text-transform: uppercase;
 	font-weight: 500;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 2px;
 	padding-left: 35px;
 }
@@ -2862,7 +2953,7 @@ section.parallax-section .section-title:before {
 	font-size: 10px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .inline-filter .gallery-filters a:before {
 	content: '';
@@ -2899,7 +2990,7 @@ section.parallax-section .section-title:before {
 	letter-spacing: 2px;
 	color: #666;
 	margin-left: 30px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	padding: 15px 30px;
 }
 .inline-filter .folio-counter div {
@@ -2967,7 +3058,7 @@ section.parallax-section .section-title:before {
 	line-height: 0;
 	color: #D5D5D5;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .dark-bg .parallax-item-number {
 	color: #414145;
@@ -2995,7 +3086,7 @@ section.parallax-section .section-title:before {
 	font-size: 24px;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	position: relative;
 	text-align: left;
 }
@@ -3277,7 +3368,7 @@ section.parallax-section .section-title:before {
 	font-weight: bold;
 	height: 54px;
 	line-height: 54px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	position: relative;
 	color: rgba(255, 255, 255, 0.21);
 }
@@ -3440,7 +3531,7 @@ section.parallax-section .section-title:before {
 .details-wrap h3 {
 	margin-bottom: 30px;
 	font-size: 30px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
 	color: rgb(50, 58, 69);
 	position: relative;
@@ -3480,7 +3571,7 @@ section.parallax-section .section-title:before {
 	text-transform: uppercase;
 	font-size: 11px;
 	color: #999;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .pr-list li span {
 	float: left;
@@ -3556,7 +3647,7 @@ section.parallax-section .section-title:before {
 .tooltip-info p {
 	font-size: 12px;
 	color: #888;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .tooltip-info h5 {
 	font-size: 16px;
@@ -3568,7 +3659,7 @@ section.parallax-section .section-title:before {
 	font-size: 12px;
 	letter-spacing: 2px;
 	color: #8B8B8B;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .show-info:hover .tooltip-info {
 	visibility: visible;
@@ -3604,7 +3695,7 @@ section.parallax-section .section-title:before {
 }
 .fet_pr-carousel-title-item h3 {
 	font-size: 40px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-weight: 800;
 	color: rgba(255, 255, 255, 0.71);
@@ -3678,7 +3769,7 @@ section.parallax-section .section-title:before {
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 500;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 4px;
 	padding-left: 35px;
 }
@@ -3741,7 +3832,7 @@ section.parallax-section .section-title:before {
 	font-size: 10px;
 	color: rgba(255, 255, 255, 0.71);
 	font-weight: 500;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 4px;
 }
 .fet_pr-carousel-counter.show-case-slider-counter {
@@ -4009,7 +4100,7 @@ section.parallax-section .section-title:before {
 	text-align: left;
 	position: relative;
 	font-size: 32px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-weight: 800;
 	color: rgba(255, 255, 255, 0.71);
@@ -4136,7 +4227,7 @@ section.parallax-section .section-title:before {
 	z-index: 11;
 	color: #f2f2f2;
 	font-size: 60px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 }
 .srv-link-text {
@@ -4277,7 +4368,7 @@ section.parallax-section .section-title:before {
 	margin-top: -25px;
 	color: rgba(255, 255, 255, 0.41);
 	font-size: 18px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
 .hidden-works-item-media-img {
@@ -4331,7 +4422,7 @@ section.parallax-section .section-title:before {
 .hidden-works-item-text h3 {
 	text-align: left;
 	font-size: 24px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	padding-top: 20px;
 	margin-bottom: 12px;
@@ -4660,7 +4751,7 @@ section.parallax-section .section-title:before {
 .team-info h4 {
 	font-size: 10px;
 	color: #666;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -4730,7 +4821,7 @@ section.parallax-section .section-title:before {
 	font-weight: 600;
 	font-size: 14px;
 	text-align: left;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .custom-inner-header {
 	float: left;
@@ -4761,7 +4852,7 @@ section.parallax-section .section-title:before {
 	-ms-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 	color: #666;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .custom-inner-header:after {
 	font-family: Font Awesome\ 5 Pro;
@@ -4840,7 +4931,7 @@ section.parallax-section .section-title:before {
 	font-weight: 600;
     font-size: 14px;
     text-align: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .custom-inner p {
 	text-align: left;
@@ -5078,7 +5169,7 @@ section.parallax-section .section-title:before {
 	font-size: 11px;
 	text-align: left;
 	color: #666;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .review-owner span {
 	color: #999;
@@ -5732,7 +5823,7 @@ section.parallax-section .section-title:before {
 	font-size: 30px;
 	margin-bottom: 40px;
 	position: relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
 .masonry-post h2 {
@@ -5936,7 +6027,7 @@ section.parallax-section .section-title:before {
 	font-size: 10px;
 	text-align: left;
 	color: #666;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .widget-posts-date {
 	float: left;
