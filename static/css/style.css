@@ -1,69 +1,24 @@
 @charset "utf-8";
-
-/*======================================
- [ -Main Stylesheet-
-  Theme: Samuel Magafu
-  Version: 1.0
-  Last change: 10/04/2018 ]
-++ Fonts ++
-++ General Style ++
-++ Loader++
-++ Header ++
-++ Navigation ++
-++ Footer ++
-++ Section ++
-++ Portfolio ++
-++ Contacts ++
-++ Blog ++
-++ 404 ++
-++ Responsive ++
-
- 
-/*-------------Fonts---------------------------------------*/
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
-
-@font-face {
-    font-family: 'Sofia Pro';
-    src: url('../fonts/SofiaPro.eot');
-    src: url('../fonts/SofiaPro.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/SofiaPro.woff2') format('woff2'),
-    url('../fonts/SofiaPro.woff') format('woff'),
-    url('../fonts/SofiaPro.ttf') format('truetype'),
-    url('../fonts/SofiaPro.svg#SofiaPro') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sofia Pro';
-    src: url('../fonts/SofiaPro-Medium.eot');
-    src: url('../fonts/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/SofiaPro-Medium.woff2') format('woff2'),
-    url('../fonts/SofiaPro-Medium.woff') format('woff'),
-    url('../fonts/SofiaPro-Medium.ttf') format('truetype'),
-    url('../fonts/SofiaPro-Medium.svg#SofiaPro-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-
 /*-------------General Style---------------------------------------*/
 
 html {
 	overflow-x: hidden !important;
 	height: 100%;
 }
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif !important;
+}
 body {
 	margin: 0;
 	padding: 0;
-	font-weight: 400;
-	font-size: 13px;
+	font-weight: 500 !important;
+	font-size: .9em !important;
 	height: 100%;
 	text-align: center;
 	background: #023c40;
 	color: #000;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Montserrat', sans-serif !important;
 }
 @-o-viewport {
 	width: device-width;
@@ -96,7 +51,7 @@ body {
 	height: 40px;
 	text-transform: uppercase;
 	letter-spacing: 10px;
-	font-size: 12px;
+	font-size: .9em !important;
 	font-weight: 400;
 	margin-top: -20px;
 	color: rgba(255, 255, 255, 0.31);
@@ -104,7 +59,7 @@ body {
 	text-align: left;
 }
 .pin:after {
-	content: "Samuel Magafu : ";
+	content: "Sam Magafu : ";
 	position: absolute;
 	left: -100%;
 	color: rgba(255, 255, 255, 0.51);
@@ -135,11 +90,11 @@ body {
 }
 /*--------------Typography--------------------------------------*/
 p {
-	font-size: 11px;
+	font-size: 1em !important;
 	line-height: 24px;
 	padding-bottom: 10px;
 	font-weight: 500;
-	color: #878C9F;
+	color: #023C40;
 	font-family: 'Montserrat', sans-serif;
 }
 blockquote {
@@ -380,7 +335,7 @@ blockquote p {
 	left: 0;
 	width: 100%;
 	bottom: -1px;
-	color: rgba(255, 255, 255, 0.41);
+	color: rgba(255, 255, 255, 0.90);
 	font-size: 10px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -402,7 +357,8 @@ blockquote p {
 	width: 1px;
 	height: 50px;
 	left: 50%;
-	background: rgba(255, 255, 255, 0.08);
+	
+	background: rgba(92, 158, 173, 0.08);
 }
 .header-social li {
 	float: left;
@@ -414,9 +370,9 @@ blockquote p {
 	width: 36px;
 	height: 36px;
 	line-height: 36px;
-	color: rgba(255, 255, 255, 0.41);
-	font-size: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.08);
+	color: rgba(92, 158, 173, 0.90);
+	font-size: 14px;
+	border: 1px solid rgba(92, 158, 173, 0.90);
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 }
@@ -462,75 +418,10 @@ blockquote p {
 	left: calc(100% + 100px);
 }
 .header-logo img {
-	height: 41@font-face {
-		font-family: 'Sofia Pro';
-		src: url('../fonts/SofiaPro.eot');
-		src: url('../fonts/SofiaPro.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/SofiaPro.woff2') format('woff2'),
-		url('../fonts/SofiaPro.woff') format('woff'),
-		url('../fonts/SofiaPro.ttf') format('truetype'),
-		url('../fonts/SofiaPro.svg#SofiaPro') format('svg');
-		font-weight: normal;
-		font-style: normal;
-	}
-	
-	@font-face {
-		font-family: 'Sofia Pro';
-		src: url('../fonts/SofiaPro-Medium.eot');
-		src: url('../fonts/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/SofiaPro-Medium.woff2') format('woff2'),
-		url('../fonts/SofiaPro-Medium.woff') format('woff'),
-		url('../fonts/SofiaPro-Medium.ttf') format('truetype'),
-		url('../fonts/SofiaPro-Medium.svg#SofiaPro-Medium') format('svg');
-		font-weight: 500;
-		font-style: normal;
-	}@font-face {
-		font-family: 'Sofia Pro';
-		src: url('../fonts/SofiaPro.eot');
-		src: url('../fonts/SofiaPro.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/SofiaPro.woff2') format('woff2'),
-		url('../fonts/SofiaPro.woff') format('woff'),
-		url('../fonts/SofiaPro.ttf') format('truetype'),
-		url('../fonts/SofiaPro.svg#SofiaPro') format('svg');
-		font-weight: normal;
-		font-style: normal;
-	}
-	
-	@font-face {
-		font-family: 'Sofia Pro';
-		src: url('../fonts/SofiaPro-Medium.eot');
-		src: url('../fonts/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/SofiaPro-Medium.woff2') format('woff2'),
-		url('../fonts/SofiaPro-Medium.woff') format('woff'),
-		url('../fonts/SofiaPro-Medium.ttf') format('truetype'),
-		url('../fonts/SofiaPro-Medium.svg#SofiaPro-Medium') format('svg');
-		font-weight: 500;
-		font-style: normal;
-	}@font-face {
-		font-family: 'Sofia Pro';
-		src: url('../fonts/SofiaPro.eot');
-		src: url('../fonts/SofiaPro.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/SofiaPro.woff2') format('woff2'),
-		url('../fonts/SofiaPro.woff') format('woff'),
-		url('../fonts/SofiaPro.ttf') format('truetype'),
-		url('../fonts/SofiaPro.svg#SofiaPro') format('svg');
-		font-weight: normal;
-		font-style: normal;
-	}
-	
-	@font-face {
-		font-family: 'Sofia Pro';
-		src: url('../fonts/SofiaPro-Medium.eot');
-		src: url('../fonts/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/SofiaPro-Medium.woff2') format('woff2'),
-		url('../fonts/SofiaPro-Medium.woff') format('woff'),
-		url('../fonts/SofiaPro-Medium.ttf') format('truetype'),
-		url('../fonts/SofiaPro-Medium.svg#SofiaPro-Medium') format('svg');
-		font-weight: 500;
-		font-style: normal;
-	}px;
+	height: 41px;
 	width: auto;
 }
+
 .nav-holder {
 	position: fixed;
 	top: 0;
@@ -570,7 +461,7 @@ blockquote p {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 94px;
-	color: #fff;
+	color: #fe9000;
 	letter-spacing: 4px;
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -759,9 +650,9 @@ nav.nav-inner {
 .scroll-nav li a {
 	float: left;
 	padding: 13px 35px;
-	color: #8B8B8B;
+	color: #eec170;
 	font-weight: 600;
-	font-size: 10px;
+	font-size: 0.9em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	position: relative;
@@ -1248,9 +1139,10 @@ p.interact,
 	text-align: left;
 	color: #fff;
 	font-size: 34px;
-	font-weight: 600;
+	font-weight: 800;
 	float: left;
 	width: 100%;
+	font-family: 'Montserrat', sans-serif;
 }
 .fs-carousel-title .btn {
 	margin-top: 30px;
@@ -1306,6 +1198,7 @@ p.interact,
 }
 .fs-carousel-link:hover:after {
 	right: -50px;
+	text-decoration: none;
 }
 .fs-carousel-item .bg,
 .fs-carousel-link:after {

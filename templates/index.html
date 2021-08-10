@@ -21,8 +21,8 @@
                     <div class="overlay"></div>
                 </div>
                 {% endfor %}
-                    
-                
+
+
             </div>
             <!--  fs-carousel end -->
             <!--  slider nav -->
@@ -37,69 +37,83 @@
 <div class="content">
     <!-- section-->
     <section data-scrollax-parent="true" id="sec2">
-        <div class="section-subtitle"  data-scrollax="properties: { translateY: '-250px' }" > <span>#</span>Short Story  </div>
+        <div class="section-subtitle" data-scrollax="properties: { translateY: '-250px' }"> <span>#</span>Short Story
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <div class="collage-image fl-wrap">
-                        <div class="collage-image-title" data-scrollax="properties: { translateY: '150px' }">Sam Magafu.</div>
-                        <img src="images/all/1.jpg" class="respimg" alt="">
+                        <div class="collage-image-title" data-scrollax="properties: { translateY: '150px' }">Sam Magafu.
+                        </div>
+                        <img src="{% static 'images/all/1.jpg' %}" class="respimg" alt="">
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="main-about fl-wrap">
-                        <h5>Curabitur convallis fringilla diam</h5>
-                        <h2>Innovative solutions<br>to boost <span> your creative </span>  projects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
+                        <h5>Creativity and Innovative solutions for your business</h5>
+                        <h2>Innovative solutions<br>to boost <span> your creative </span> projects</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla
+                            finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus
+                            suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla
+                            diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a
+                            consequat purus viverra.</p>
                         <!-- features-box-container -->
                         <div class="features-box-container fl-wrap">
                             <div class="row">
                                 <!--features-box -->
-                                <div class="features-box col-md-6">
-                                    <div class="time-line-icon">
-                                        <i class="fal fa-desktop"></i>
-                                    </div>
-                                    <h3>Web Design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.   </p>
+                                <div class="col-md-6 text-left mt-1">
+                                    <h4 class="text-uppercase">Branding</h4>
+                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.</p> -->
+                                    <ul class="spaced">
+                                        <li>Brand Identity</li>
+                                        <li>Visual Language</li>
+                                        <li>Packaging Design</li>
+                                        <li>Brand Campaigns</li>
+                                        <li>Signature Assets</li>
+                                        <li>Brand Guidelines</li>
+                                    </ul>
                                 </div>
                                 <!-- features-box end  -->
                                 <!--features-box -->
-                                <div class="features-box col-md-6">
-                                    <div class="time-line-icon">
-                                        <i class="fal fa-mobile-android"></i>
-                                    </div>
-                                    <h3>Ui/Ux Design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.  </p>
+                                <div class="col-md-6 text-left mt-1">
+                                    <h4 class="text-uppercase">Strategic Planning</h4>
+                                    <ul class="spaced">
+                                        <li>Research & Analysis</li>
+                                        <li>Trends & insight</li>
+                                        <li>Customers Experience</li>
+                                        <li>Brand platform & Positioning</li>
+                                        <li>Go-to-market Planning</li>
+                                        <li>Content & Messaging</li>
+                                    </ul>
                                 </div>
                                 <!-- features-box end  -->
                                 <!--features-box -->
-                                <div class="features-box col-md-6">
-                                    <div class="time-line-icon">
-                                        <i class="fab fa-pagelines"></i>
-                                    </div>
-                                    <h3>Branding</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.   </p>
+                                <div class="col-md-6 text-left mt-1">
+                                    <h4 class="text-uppercase">Technology</h4>
+                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.   </p> -->
+                                    <ul class="spaced">
+                                        <li>Front & Backend Web Design</li>
+                                        <li>UI Design</li>
+                                        <li>UX Strategy & Design</li>
+                                        <li>Mobie & Desktop App Development</li>
+                                        <li>Digital Advertising</li>
+                                        <li>Quality Assurance</li>
+                                        <li>Prototyping & Optimization</li>
+
+                                    </ul>
                                 </div>
-                                <!-- features-box end  -->
-                                <!--features-box -->
-                                <div class="features-box col-md-6">
-                                    <div class="time-line-icon">
-                                        <i class="fal fa-shopping-bag"></i>
-                                    </div>
-                                    <h3>Ecommerce</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque.  </p>
-                                </div>
-                                <!-- features-box end  -->
                             </div>
                         </div>
                         <!-- features-box-container end  -->
-                        <a href="portfolio.html" class="btn float-btn flat-btn color-btn">My Portfolio</a>
+                        <a href="{% url 'project:list' %}" class="btn float-btn flat-btn color-btn">My Portfolio</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bg-parallax-module" data-position-top="90"  data-position-left="25" data-scrollax="properties: { translateY: '-250px' }"></div>
-        <div class="bg-parallax-module" data-position-top="70"  data-position-left="70" data-scrollax="properties: { translateY: '150px' }"></div>
+        <div class="bg-parallax-module" data-position-top="90" data-position-left="25"
+            data-scrollax="properties: { translateY: '-250px' }"></div>
+        <div class="bg-parallax-module" data-position-top="70" data-position-left="70"
+            data-scrollax="properties: { translateY: '150px' }"></div>
         <div class="sec-lines"></div>
     </section>
     <!-- section end-->
@@ -168,14 +182,16 @@
         </div>
     </section>
     <!-- section end-->
-    
+
     <section>
-        <div class="section-subtitle"  data-scrollax="properties: { translateY: '-250px' }" ><span>#</span>Testimonials</div>
+        <div class="section-subtitle" data-scrollax="properties: { translateY: '-250px' }"><span>#</span>Testimonials
+        </div>
         <div class="container">
             <div class="section-title fl-wrap">
                 <h3>Reviews</h3>
                 <h2>My Clients and <span>Testimonials</span></h2>
-                <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida.  </p>
+                <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna.
+                    Etiam suscipit commodo gravida. </p>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -193,8 +209,11 @@
                     <div class="text-carousel-item">
                         <div class="popup-avatar"><img src="{% static 'images/avatar/1.jpg' %}" alt=""></div>
                         <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
-                        <div class="review-owner fl-wrap">Milka Antony  - <span>Happy Client</span></div>
-                        <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam erat."</p>
+                        <div class="review-owner fl-wrap">Milka Antony - <span>Happy Client</span></div>
+                        <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu
+                            mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer
+                            adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                            erat."</p>
                         <a href="#" class="testim-link">Via Facebook</a>
                     </div>
                 </div>
@@ -204,8 +223,11 @@
                     <div class="text-carousel-item">
                         <div class="popup-avatar"><img src="{% static 'images/avatar/2.jpg' %}" alt=""></div>
                         <div class="listing-rating card-popup-rainingvis" data-starrating2="4"> </div>
-                        <div class="review-owner fl-wrap">Milka Antony  - <span>Happy Client</span></div>
-                        <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam erat."</p>
+                        <div class="review-owner fl-wrap">Milka Antony - <span>Happy Client</span></div>
+                        <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu
+                            mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer
+                            adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                            erat."</p>
                         <a href="#" class="testim-link">Via Facebook</a>
                     </div>
                 </div>
@@ -215,8 +237,11 @@
                     <div class="text-carousel-item">
                         <div class="popup-avatar"><img src="{% static 'images/avatar/3.jpg' %}" alt=""></div>
                         <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
-                        <div class="review-owner fl-wrap">Milka Antony  - <span>Happy Client</span></div>
-                        <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam erat."</p>
+                        <div class="review-owner fl-wrap">Milka Antony - <span>Happy Client</span></div>
+                        <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu
+                            mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer
+                            adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                            erat."</p>
                         <a href="#" class="testim-link">Via Facebook</a>
                     </div>
                 </div>
@@ -226,8 +251,11 @@
                     <div class="text-carousel-item">
                         <div class="popup-avatar"><img src="{% static 'images/avatar/4.jpg' %}" alt=""></div>
                         <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
-                        <div class="review-owner fl-wrap">Milka Antony  - <span>Happy Client</span></div>
-                        <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam erat."</p>
+                        <div class="review-owner fl-wrap">Milka Antony - <span>Happy Client</span></div>
+                        <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu
+                            mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer
+                            adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                            erat."</p>
                         <a href="#" class="testim-link">Via Facebook</a>
                     </div>
                 </div>
@@ -249,7 +277,7 @@
         </div> -->
     </section>
 
-    
+
     <!-- section end -->
 
     <!-- section-->
