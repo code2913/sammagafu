@@ -4,8 +4,14 @@
 .recent-tutorials{
     height: 400px;
 }
-.spaced{
-	line-height: 1.5em !important;   
+ul.spaced li{
+    /* line-height: 1.5em !important; */
+    padding-bottom: 1em !important;
+    /* text-transform: uppercase; */
+}
+
+ul.spaced li:hover{
+    margin-left: 1em;
 }
 iframe,embed { width: 100%!important; height: 400px!important; }
 
