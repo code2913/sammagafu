@@ -18,3 +18,11 @@ iframe,embed { width: 100%!important; height: 400px!important; }
 ul.yellow{
 	color: #eec170ff !important;
 }
+.greyscale{
+    filter: grayscale(100%) !important;
+}
+.text-black{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: black;
+}
