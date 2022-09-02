@@ -36,6 +36,6 @@ Professional software developer, for any web or mobile app project or question f
 ![Raspberry Pi](https://img.shields.io/badge/-Raspberry%20Pi-C51A4A?style=flat-square&logo=Raspberry-Pi)
 
 ![Samuel's GitHub stats](https://github-readme-stats.vercel.app/api?username=sammagafu&show_icons=true&include_all_commits=true)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sammagafu)](https://github.com/sammagafu/github-readme-stats)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sammagafu)](https://github.com/sammagafu/github-readme-stats)
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=aemmadi.aemmadi)
