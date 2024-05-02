@@ -1,11 +1,11 @@
 ## Fancy seeing you here! <img src="https://raw.githubusercontent.com/aemmadi/aemmadi/master/wave.gif" width="30">
 
 I am Samuel Fredrick Magafu, people call me codex or Ubuntu,
-Professional software developer, for any web or mobile app project or question feel free to contact me via hi@sammagafu.com
+Professional software developer, for any web or mobile app project or question feel free to contact me via hi@samuelmagafu.com
 
 [![Linkedin Badge](https://img.shields.io/badge/-samuelmagafu-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/samvsuel/)](https://www.linkedin.com/in/samvsuel/)
 [![Instagram Badge](https://img.shields.io/badge/-samuelmagafu-purple?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/samvsuel/)](https://www.instagram.com/samvsuel)
-[![Gmail Badge](https://img.shields.io/badge/-hi@sammagafu.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:hi@sammagafu.com)](mailto:hi@sammagafu.com)
+[![Gmail Badge](https://img.shields.io/badge/-hi@sammagafu.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:hi@samuelmagafu.com)](mailto:hi@samuelmagafu.com)
 
 ## ⚡ Technologies
 
